@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: rgba(240, 128, 128, 0.342);
+}
+
+.container {
+  max-width: 400px;
+  box-shadow: 0 0 20px 1px #666666;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#display {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  max-width: 400px;
+  height: 150px;
+  text-align: right;
+  padding: 70px 20px 0 0;
+  font-size: 54px;
+  background-color: lightpink;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.buttons {
+  display: flex;
+  background-color: lightpink;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.buttons button {
+  width: 80px;
+  height: 80px;
+  font-size: 25px;
+  flex-basis: 90px;
+  margin: 9px;
+  border-radius: 8px;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background-color: palevioletred;
+}
+
+.buttons button:nth-child(13) {
+  width: 182px;
+}
+
+.btns2 {
+  flex-direction: column;
+}
+
+.btns2 button:nth-child(2),
+.btns2 button:nth-child(3) {
+  height: 178px;
+}
+
+@media all and (max-width: 800px) {
+  .buttons button {
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+    margin: 17px;
+  }
+
+  .btns2 button:nth-child(2),
+  .btns2 button:nth-child(3) {
+    height: 154px;
+  }
+
+  .buttons button:nth-child(13) {
+    width: 160px;
+  }
+}
